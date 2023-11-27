@@ -24,16 +24,15 @@ This library is under construction. Any contributions are welcomed.
 
 After installing the library, you can use custom functions to fetch blockchain data. Here are a few examples:
 
-- `=GET_ETH_BALANCE("0x...")`: Fetches the Ethereum balance of a given address.
-
-Replace `"0x..."` with the actual address or transaction hash and `functionName` with the contract function's name.
+- `=GET_ETH_BALANCE(TargetAddress)`: Fetches the Ethereum balance of a target address.
+- `=GET_ERC_BALANCE(TokenAddress, TargetAddress)`: Fetches the ERC token balance of a target address (e.g., WETH, USDC, USDT).
+- `GET_PRICE_USD(TokenAddress)`: Fetch the price of a token via Chainlink (e.g., BTC, ETH, SOL, USDC, USDT)
 
 ## Examples
 
 Below are some example use cases for this library:
 
 - Tracking cryptocurrency balances in your portfolio.
-- Monitoring the status of transactions.
 - Fetching and displaying data from smart contracts.
 
 ## Contributing
