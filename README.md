@@ -17,8 +17,9 @@ This library is under construction. Any contributions are welcomed.
 
 1. Open your Google Sheets document.
 2. Go to `Extensions > Apps Script`.
-3. Copy and paste the code from `script.gs` in this repository into the Apps Script editor.
-4. Save and close the editor.
+3. Copy and paste the code from `OneSource.js` and `configExample.js` in this repository into the Apps Script editor.
+4. Enter your Infura API Key.
+5. Save and close the editor.
 
 ## Usage
 
