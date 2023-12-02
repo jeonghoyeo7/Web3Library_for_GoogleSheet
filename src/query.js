@@ -5,8 +5,9 @@
  * @return {number} The balance of the address in ETH
  * @customfunction
  */
-function GET_ETH_BALANCE(address) {
-  return new Transaction(NETWORK_ETH).balance(address);
+function GET_ETH_BALANCE_블파스_11월30일(address) {
+  var balance = new Transaction(NETWORK_ETH).balance(address);
+  return balance / 10 ** 18;
 }
 
 /**
@@ -34,6 +35,51 @@ function GET_ERC_BALANCE(ofToken, address) {
   }
 
   return new ERC20(NETWORK_ETH, erc).balance(address);
+}
+
+/**
+ * Returns the USDC balance of an address in Ethereum Mainnet
+ *
+ * @param {*} address
+ * @return {*}
+ * @customfunction
+ */
+function GET_USDC_BALANCE(address) {
+  var balance = new ERC20(
+    NETWORK_ETH,
+    CONTRACT_ADDRESSES.ethereum.usdc,
+  ).balance(address);
+  return balance / 10 ** 6;
+}
+
+/**
+ * Returns the USDT balance of an address in Ethereum Mainnet
+ *
+ * @param {*} address
+ * @return {*}
+ * @customfunction
+ */
+function GET_USDT_BALANCE(address) {
+  var balance = new ERC20(
+    NETWORK_ETH,
+    CONTRACT_ADDRESSES.ethereum.usdt,
+  ).balance(address);
+  return balance / 10 ** 6;
+}
+
+/**
+ * Returns the WETH balance of an address in Ethereum Mainnet
+ *
+ * @param {*} address
+ * @return {*}
+ * @customfunction
+ */
+function GET_WETH_BALANCE(address) {
+  var balance = new ERC20(
+    NETWORK_ETH,
+    CONTRACT_ADDRESSES.ethereum.weth,
+  ).balance(address);
+  return balance / 10 ** 18;
 }
 
 /**

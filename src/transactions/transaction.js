@@ -46,6 +46,6 @@ class Transaction {
     };
 
     var response = UrlFetchApp.fetch(this.network, options);
-    return parseInt(JSON.parse(response)["result"]) * 10 ** -18;
+    return parseInt(JSON.parse(response)["result"]);
   }
 }
