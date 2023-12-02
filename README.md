@@ -4,7 +4,7 @@
 
 This Web3 library for Google Apps Script enables users to interact with blockchain data directly from Google Sheets. It simplifies the process of querying blockchain information, making it accessible through custom functions in Google Sheets. Ideal for users looking to integrate blockchain data into their spreadsheets without the need for complex coding.
 
-This code is originally by [jointheantfarm](https://www.reddit.com/r/ethdev/comments/149xemc/get_onchain_data_from_google_apps_script/?utm_source=share&utm_medium=ios_app&utm_name=ioscss&utm_content=2&utm_term=1).
+This code is originally from [jointheantfarm](https://www.reddit.com/r/ethdev/comments/149xemc/get_onchain_data_from_google_apps_script/?utm_source=share&utm_medium=ios_app&utm_name=ioscss&utm_content=2&utm_term=1).
 
 This library is under construction. Any contributions are welcomed.
 
